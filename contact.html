@@ -6,23 +6,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contacto</title>
     <link rel="stylesheet" href="./css/tailwind.css">
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
 </head>
 <body>
-    <div class="panel">
-        <div class="panel-title">
-            Contacto
-        </div>
-        <div class="panel-body">
-            <p>
-                Exercitation ullamco qui reprehenderit
-                dolor. Sint sint irure excepteur nisi
-                quis exercitation sit. Commodo fugiat
-                non veniam ullamco elit aute minim.
-            </p>
-            <a class="btn-primary" href="index.html">
-                Inicio
-            </a>
-        </div>
+    <div id="app">
+        <panel>
+            <template v-slot:title>Contacto</template>
+            <template v-slot:body>
+                <p class="leading-loose">
+                    Exercitation ullamco qui reprehenderit
+                    dolor. Sint sint irure excepteur nisi
+                    quis exercitation sit. Commodo fugiat
+                    non veniam ullamco elit aute minim.
+                </p>
+                <a class="btn-primary" href="index.html">
+                    Inicio
+                </a>
+            </template>
+        </panel>
     </div>
+    <script src="js/app.js"></script>
 </body>
 </html>
