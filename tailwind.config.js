@@ -3,7 +3,11 @@ module.exports = {
     './*.html'
   ],
   theme: {
-    extend: {},
+    extend: {
+      spacing: {
+        'quarter': '25%',
+      }
+    },
   },
   plugins: [],
 }
