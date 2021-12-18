@@ -1,13 +1,11 @@
-Vue.component('panel', {
+Vue.component('link-cascadia', {
     template: `
-        <div class="border border-blue-900">
-            <div class="bg-blue-900 py-5 px-4 text-2xl text-white">
-                <slot name="title"></slot>
-            </div>
-            <div class="py-5 px-4">
-                <slot name="body"></slot>
-            </div>
-        </div>
+        <a class="group flex items-center text-do-blue-light hover:text-do-blue-medium font-cascadia text-lg font-bold" href="">
+            <slot></slot>
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 group-hover:ml-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+            </svg>
+        </a>
     `
 })
 
