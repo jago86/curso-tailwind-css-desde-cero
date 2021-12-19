@@ -151,7 +151,7 @@
         </div>
 
         <!-- SLIDES -->
-        <div class="bg-gray-200 py-12">
+        <div class="bg-gray-200 py-12 overflow-x-hidden">
             <!-- Franja 1 -->
             <div class="flex gap-x-5">
 
@@ -508,82 +508,161 @@
 
                 <!-- BLOCKS -->
                 <div class="mt-20 flex gap-x-5">
-                    <panel-blog>
-                        <template v-slot:image>
-                            <img class="rounded-t-lg" src="/images/how-to-install-mysql-tutorial-image.jpg" alt="">
-                        </template>
-                        <template v-slot:type>
-                            TUTORIAL
-                        </template>
-                        <template v-slot:title>
-                            Curso de Tailwind CSS desde cero
-                        </template>
-                        <template v-slot:date>
-                            Julio 27
-                        </template>
-                        <template v-slot:visits>
-                            125
-                        </template>
-                    </panel-blog>
+                    <div class="w-1/4">
+                        <panel-blog>
+                            <template v-slot:image>
+                                <img class="rounded-t-lg" src="/images/how-to-install-mysql-tutorial-image.jpg" alt="">
+                            </template>
+                            <template v-slot:type>
+                                Tutorial
+                            </template>
+                            <template v-slot:title>
+                                How To Deploy a React Application to DigitalOcean App Platform
+                            </template>
+                            <template v-slot:date>
+                                Julio 30, 2020
+                            </template>
+                            <template v-slot:visits>
+                                319k
+                            </template>
+                        </panel-blog>
+                    </div>
 
-                    <panel-blog>
-                        <template v-slot:image>
-                            <img class="rounded-t-lg" src="/images/how-to-install-mysql-tutorial-image.jpg" alt="">
-                        </template>
-                        <template v-slot:type>
-                            Blog
-                        </template>
-                        <template v-slot:title>
-                            How To Deploy a React Application to DigitalOcean App Platform
-                        </template>
-                        <template v-slot:date>
-                            Julio 27
-                        </template>
-                        <template v-slot:visits>
-                            125
-                        </template>
-                    </panel-blog>
+                    <div class="w-1/4">
+                        <panel-blog>
+                            <template v-slot:image>
+                                <img class="rounded-t-lg" src="/images/how-to-deploy-a-react-app-tutorial-image.jpg" alt="">
+                            </template>
+                            <template v-slot:type>
+                                Tutorial
+                            </template>
+                            <template v-slot:title>
+                                How To Deploy a React Application to DigitalOcean App Platform
+                            </template>
+                            <template v-slot:date>
+                                December 18, 2020
+                            </template>
+                            <template v-slot:visits>
+                                22.8k
+                            </template>
+                        </panel-blog>
+                    </div>
 
-                    <panel-blog>
-                        <template v-slot:image>
-                            <img class="rounded-t-lg" src="/images/how-to-install-mysql-tutorial-image.jpg" alt="">
-                        </template>
-                        <template v-slot:type>
-                            Blog
-                        </template>
-                        <template v-slot:title>
-                            How To Deploy a React Application to DigitalOcean App Platform
-                        </template>
-                        <template v-slot:date>
-                            Julio 27
-                        </template>
-                        <template v-slot:visits>
-                            125
-                        </template>
-                    </panel-blog>
+                    <div class="w-1/4">
+                        <panel-blog>
+                            <template v-slot:image>
+                                <img class="rounded-t-lg" src="/images/how-to-install-nodejs-tutorial-image.jpg" alt="">
+                            </template>
+                            <template v-slot:type>
+                                Tutorial
+                            </template>
+                            <template v-slot:title>
+                                How To Install Node.js on Ubuntu 20.04
+                            </template>
+                            <template v-slot:date>
+                                August 9, 2020
+                            </template>
+                            <template v-slot:visits>
+                                273.1
+                            </template>
+                        </panel-blog>
+                    </div>
 
-                    <panel-blog>
-                        <template v-slot:image>
-                            <img class="rounded-t-lg" src="/images/how-to-install-mysql-tutorial-image.jpg" alt="">
-                        </template>
-                        <template v-slot:type>
-                            Blog
-                        </template>
-                        <template v-slot:title>
-                            How To Deploy a React Application to DigitalOcean App Platform
-                        </template>
-                        <template v-slot:date>
-                            Julio 27
-                        </template>
-                        <template v-slot:visits>
-                            125
-                        </template>
-                    </panel-blog>
+                    <div class="w-1/4">
+                        <panel-blog>
+                            <template v-slot:image>
+                                <img class="rounded-t-lg" src="/images/how-to-scale-your-saas-product-blog-image.jpg" alt="">
+                            </template>
+                            <template v-slot:type>
+                                Blog
+                            </template>
+                            <template v-slot:title>
+                                How To Scale your SaaS product without breaking the bank
+                            </template>
+                            <template v-slot:date>
+                                June 22, 2021
+                            </template>
+                        </panel-blog>
+                    </div>
                 </div>
+
+                <div class="mt-10 flex gap-x-5">
+                    <div class="w-1/4">
+                        <panel-blog>
+                            <template v-slot:image>
+                                <img class="rounded-t-lg" src="/images/contributing-to-open-source-blog-image.jpg" alt="">
+                            </template>
+                            <template v-slot:type>
+                                Blog
+                            </template>
+                            <template v-slot:title>
+                                Contributing to open source software: Kubernetes
+                            </template>
+                            <template v-slot:date>
+                                June 15, 2021
+                            </template>
+                        </panel-blog>
+                    </div>
+
+                    <div class="w-1/4">
+                        <panel-blog>
+                            <template v-slot:image>
+                                <img class="rounded-t-lg" src="/images/how-to-code-in-python-tutorial-image.jpg" alt="">
+                            </template>
+                            <template v-slot:type>
+                                Tutorial
+                            </template>
+                            <template v-slot:title>
+                                How to code in Python
+                            </template>
+                            <template v-slot:date>
+                                August 23, 2021
+                            </template>
+                            <template v-slot:visits>
+                                16.1m
+                            </template>
+                        </panel-blog>
+                    </div>
+
+                    <div class="w-1/4">
+                        <panel-blog>
+                            <template v-slot:image>
+                                <img class="rounded-t-lg" src="/images/introducing-digitalocean-managed-mongodb-blog-image.jpg" alt="">
+                            </template>
+                            <template v-slot:type>
+                                Blog
+                            </template>
+                            <template v-slot:title>
+                                Introducing Digital Ocean Managed MongoDB - a fully managed, database as service for modern apps
+                            </template>
+                            <template v-slot:date>
+                                June 19, 2021
+                            </template>
+                        </panel-blog>
+                    </div>
+
+                    <div class="w-1/4">
+                        <panel-blog>
+                            <template v-slot:image>
+                                <img class="rounded-t-lg" src="/images/multi-cloud-vs-hybrid-cloud-blog-image.jpg" alt="">
+                            </template>
+                            <template v-slot:type>
+                                Blog
+                            </template>
+                            <template v-slot:title>
+                                Multi-cloud vs hybrid cloud: Everything your business needs to know
+                            </template>
+                            <template v-slot:date>
+                                June 22, 2021
+                            </template>
+                        </panel-blog>
+                    </div>
+                </div>
+
             </div>
         </div>
 
-        <div class="py-20 bg-do-blue-lighter">
+        <div class="bg-do-blue-lighter">
             <div
                 class="container flex items-center gap-x-8 mx-auto bg-do-blue-dark text-white py-32 px-16 rounded"
                 style="background: url(/images/new-cta-band-bg-image.jpg);"
@@ -600,46 +679,94 @@
 
         <div class="bg-do-blue-lighter">
 
-            <div class="container flex mx-auto py-40 border-b border-gray-400">
+            <div class="flex mx-32 py-20 border-b border-gray-400">
                 <div class="w-1/5">
                     <div class="font-medium text-xl mb-5">Company</div>
-                    <div class="text-gray-500">Link 1</div>
-                    <div class="text-gray-500">Link 2</div>
+                    <a href="#" class="text-gray-600 block mb-2 hover:text-gray-900">About</a>
+                    <a href="#" class="text-gray-600 block mb-2 hover:text-gray-900">Leadership</a>
+                    <a href="#" class="text-gray-600 block mb-2 hover:text-gray-900">Blog</a>
+                    <a href="#" class="text-gray-600 block mb-2 hover:text-gray-900">Careers</a>
+                    <a href="#" class="text-gray-600 block mb-2 hover:text-gray-900">Customers</a>
+                    <a href="#" class="text-gray-600 block mb-2 hover:text-gray-900">Partners</a>
+                    <a href="#" class="text-gray-600 block mb-2 hover:text-gray-900">Referral Program</a>
+                    <a href="#" class="text-gray-600 block mb-2 hover:text-gray-900">Press</a>
+                    <a href="#" class="text-gray-600 block mb-2 hover:text-gray-900">Legal</a>
+                    <a href="#" class="text-gray-600 block mb-2 hover:text-gray-900">Trust Platform</a>
+                    <a href="#" class="text-gray-600 block mb-2 hover:text-gray-900">Investor Relations</a>
+
                 </div>
                 <div class="w-1/5">
                     <div class="font-medium text-xl mb-5">Products</div>
-                    <div class="text-gray-500">Link 1</div>
-                    <div class="text-gray-500">Link 2</div>
+                    <a href="#" class="text-gray-600 block mb-2 hover:text-gray-900">Products Overview</a>
+                    <a href="#" class="text-gray-600 block mb-2 hover:text-gray-900">Droplets</a>
+                    <a href="#" class="text-gray-600 block mb-2 hover:text-gray-900">Kubernetes</a>
+                    <a href="#" class="text-gray-600 block mb-2 hover:text-gray-900">Managed Databases</a>
+                    <a href="#" class="text-gray-600 block mb-2 hover:text-gray-900">Spaces</a>
+                    <a href="#" class="text-gray-600 block mb-2 hover:text-gray-900">Marketplace</a>
+                    <a href="#" class="text-gray-600 block mb-2 hover:text-gray-900">Load Balancers</a>
+                    <a href="#" class="text-gray-600 block mb-2 hover:text-gray-900">Block Storage</a>
+                    <a href="#" class="text-gray-600 block mb-2 hover:text-gray-900">Tools & Integrations</a>
+                    <a href="#" class="text-gray-600 block mb-2 hover:text-gray-900">API</a>
+                    <a href="#" class="text-gray-600 block mb-2 hover:text-gray-900">Pricing</a>
+                    <a href="#" class="text-gray-600 block mb-2 hover:text-gray-900">Documentation</a>
+                    <a href="#" class="text-gray-600 block mb-2 hover:text-gray-900">Release Notes</a>
                 </div>
                 <div class="w-1/5">
                     <div class="font-medium text-xl mb-5">Community</div>
-                    <div class="text-gray-500">Link 1</div>
-                    <div class="text-gray-500">Link 2</div>
+                    <a href="#" class="text-gray-600 block mb-2 hover:text-gray-900">Tutorials</a>
+                    <a href="#" class="text-gray-600 block mb-2 hover:text-gray-900">Meetups</a>
+                    <a href="#" class="text-gray-600 block mb-2 hover:text-gray-900">Q&A</a>
+                    <a href="#" class="text-gray-600 block mb-2 hover:text-gray-900">Write for DOnations</a>
+                    <a href="#" class="text-gray-600 block mb-2 hover:text-gray-900">Droplets for Demos</a>
+                    <a href="#" class="text-gray-600 block mb-2 hover:text-gray-900">Hatch Startup Program</a>
+                    <a href="#" class="text-gray-600 block mb-2 hover:text-gray-900">Shop Swag</a>
+                    <a href="#" class="text-gray-600 block mb-2 hover:text-gray-900">Research Program</a>
+                    <a href="#" class="text-gray-600 block mb-2 hover:text-gray-900">Currents Research</a>
+                    <a href="#" class="text-gray-600 block mb-2 hover:text-gray-900">Open Source</a>
+                    <a href="#" class="text-gray-600 block mb-2 hover:text-gray-900">Code of Conduct</a>
+                    <a href="#" class="text-gray-600 block mb-2 hover:text-gray-900">Newsletter Signup</a>
                 </div>
                 <div class="w-1/5">
                     <div class="font-medium text-xl mb-5">Solutions</div>
-                    <div class="text-gray-500">Link 1</div>
-                    <div class="text-gray-500">Link 2</div>
+                    <a href="#" class="text-gray-600 block mb-2 hover:text-gray-900">Web & Mobile Apps</a>
+                    <a href="#" class="text-gray-600 block mb-2 hover:text-gray-900">Website Hosting</a>
+                    <a href="#" class="text-gray-600 block mb-2 hover:text-gray-900">Game Development</a>
+                    <a href="#" class="text-gray-600 block mb-2 hover:text-gray-900">Streaming</a>
+                    <a href="#" class="text-gray-600 block mb-2 hover:text-gray-900">VPN</a>
+                    <a href="#" class="text-gray-600 block mb-2 hover:text-gray-900">Startups</a>
+                    <a href="#" class="text-gray-600 block mb-2 hover:text-gray-900">SaaS Solutions</a>
+                    <a href="#" class="text-gray-600 block mb-2 hover:text-gray-900">Agency & Web Dev Shops</a>
+                    <a href="#" class="text-gray-600 block mb-2 hover:text-gray-900">Managed Cloud Hosting Providers</a>
+                    <a href="#" class="text-gray-600 block mb-2 hover:text-gray-900">Big Data</a>
+                    <a href="#" class="text-gray-600 block mb-2 hover:text-gray-900">Business Solutions</a>
                 </div>
                 <div class="w-1/5">
                     <div class="font-medium text-xl mb-5">Contact</div>
-                    <div class="text-gray-500">Link 1</div>
-                    <div class="text-gray-500">Link 2</div>
+                    <a href="#" class="text-gray-600 block mb-2 hover:text-gray-900">Support</a>
+                    <a href="#" class="text-gray-600 block mb-2 hover:text-gray-900">Sales</a>
+                    <a href="#" class="text-gray-600 block mb-2 hover:text-gray-900">Report Abuse</a>
+                    <a href="#" class="text-gray-600 block mb-2 hover:text-gray-900">System Status</a>
+                    <a href="#" class="text-gray-600 block mb-2 hover:text-gray-900">Share your ideas</a>
                 </div>
             </div>
         </div>
 
         <div class="bg-do-blue-lighter">
-            <div class="container flex items-center justify-between mx-auto py-10">
-                <div class="flex items-center">
-                    <img src="https://images.prismic.io/www-static%2F903fd83b-8963-42c2-baf6-44f4d6bb83f2_digitalocean-logo-mark.svg?auto=compress,format" alt="">
-                    <div>© 2021 DigitalOcean, LLC. All rights reserved.</div>
+            <div class="mx-32 flex items-center justify-between py-10">
+                <div class="flex gap-x-5 items-center">
+                    <img class="w-10" src="/images/digital-ocean.svg" alt="">
+                    <div class="text-gray-500">© 2021 DigitalOcean, LLC. All rights reserved.</div>
                 </div>
-                <div>
-                    <button class="px-2 py-2 bg-gray-200 hover:bg-gray-100 rounded">dsfsdf</button>
-                    <button class="px-2 py-2 bg-gray-200 hover:bg-gray-100 rounded">dsfsdf</button>
-                    <button class="px-2 py-2 bg-gray-200 hover:bg-gray-100 rounded">dsfsdf</button>
-                    <button class="px-2 py-2 bg-gray-200 hover:bg-gray-100 rounded">dsfsdf</button>
+                <div class="flex gap-x-2">
+                    <a href="#" class="hover:opacity-70"><img src="/images/twitch-social-icon.svg" alt=""></a>
+                    <a href="#" class="hover:opacity-70"><img src="/images/twitter-social-icon.svg" alt=""></a>
+                    <a href="#" class="hover:opacity-70"><img src="/images/facebook-social-icon.svg" alt=""></a>
+                    <a href="#" class="hover:opacity-70"><img src="/images/instagram-social-icon.svg" alt=""></a>
+                    <a href="#" class="hover:opacity-70"><img src="/images/youtube-social-icon.svg" alt=""></a>
+                    <a href="#" class="hover:opacity-70"><img src="/images/linkedin-social-icon.svg" alt=""></a>
+                    <a href="#" class="hover:opacity-70"><img src="/images/dev-social-icon.svg" alt=""></a>
+                    <a href="#" class="hover:opacity-70"><img src="/images/glassdoor-social-icon.svg" alt=""></a>
+                    <a href="#" class="hover:opacity-70"><img src="/images/builtin-social-icon.svg" alt=""></a>
                 </div>
             </div>
         </div>

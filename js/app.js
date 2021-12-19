@@ -11,12 +11,12 @@ Vue.component('link-cascadia', {
 
 Vue.component('panel-blog', {
     template: `
-        <div class="w-1/4 bg-white shadow-lg rounded-lg">
+        <div class="flex flex-col bg-white shadow-lg hover:shadow-2xl rounded-lg">
             <div>
                 <slot name="image"></slot>
             </div>
 
-            <div class="py-6 px-6">
+            <div class="flex flex-col justify-between border py-6 px-6">
                 <div class="uppercase text-sky-500 tracking-widest">
                     <slot name="type"></slot>
                 </div>
@@ -24,10 +24,10 @@ Vue.component('panel-blog', {
                     <slot name="title"></slot>
                 </div>
                 <div class="flex text-gray-500 text-sm">
-                    <div class="w-1/2">
+                    <div class="w-2/3 shrink-0">
                         <slot name="date"></slot>
                     </div>
-                    <div class="flex items-center w-1/2">
+                    <div v-if="$slots.visits" class="flex items-center w-1/2">
                         <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
