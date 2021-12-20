@@ -461,9 +461,9 @@
 
         <!-- FEATURES -->
         <div class="bg-gray-100 py-28 lg:mt-20">
-            <div class="container flex items-center mx-auto">
+            <div class="container flex flex-col lg:flex-row gap-y-10 items-center mx-auto">
 
-                <div class="w-1/3 pr-9">
+                <div class="w-full lg:w-1/3 pr-9">
                     <h2 class="text-4xl font-bold">See what you can save</h2>
                     <p class="text-gray-500 font-medium text-xl my-4 tracking-tight">
                         DigitalOcean consistently outperforms other cloud providers on price, while delivering the same performance you need tosucceed.
@@ -471,7 +471,7 @@
                     <link-cascadia>Calculate your savings</link-cascadia>
                 </div>
 
-                <div class="w-1/3 panel bg-do-blue-dark text-gray-300">
+                <div class="w-full lg:w-1/3 panel bg-do-blue-dark text-gray-300">
                     <h2 class="text-4xl font-bold">Basic VMs</h2>
                     <p class="mt-5 mb-10">Easy, fast, and flexible compute built for a range of needs.</p>
 
@@ -503,7 +503,7 @@
                     </div>
                 </div>
 
-                <div class="w-1/3 panel">
+                <div class="w-full lg:w-1/3 panel">
                     <h2 class="text-4xl font-bold">Monthly cost</h2>
                     <p class="mt-5 mb-10">Estimated monthly spend.</p>
 
@@ -556,34 +556,34 @@
         <!-- COMMUNITY -->
         <div class="bg-do-blue-lighter py-24">
             <div class="container mx-auto">
-                <div class="w-1/2 mx-auto text-center">
+                <div class="w-full lg:w-1/2 mx-auto text-center">
                     <h1 class="font-bold text-4xl">Build alongside a robust and supportive community like you</h1>
                     <p class="my-5 text-xl text-gray-600 font-medium">Quickly learn new tech concepts, programming languages, and get answers to your questions from a vibrant developer community.</p>
                     <button class="btn-blue">Explore the community</button>
                 </div>
 
-                <div class="flex px-28 mt-16 gap-x-4">
-                    <div class="w-1/4">
-                        <div class="text-4xl font-bold text-do-blue-light">3K+</div>
+                <div class="flex flex-col lg:flex-row lg:px-28 mt-16 gap-y-5 gap-x-4">
+                    <div class="w-full lg:w-1/4">
+                        <div class="text-4xl font-bold text-do-blue-light text-center lg:text-left">3K+</div>
                         <p class="text-lg text-gray-500 font-medium">In-depth technical tutorials for developers</p>
                     </div>
-                    <div class="w-1/4">
-                        <div class="text-4xl font-bold text-do-blue-light">3.5M</div>
+                    <div class="w-full lg:w-1/4">
+                        <div class="text-4xl font-bold text-do-blue-light text-center lg:text-left">3.5M</div>
                         <p class="text-lg text-gray-500 font-medium">Visits per month to our community site</p>
                     </div>
-                    <div class="w-1/4">
-                        <div class="text-4xl font-bold text-do-blue-light">170K</div>
+                    <div class="w-full lg:w-1/4">
+                        <div class="text-4xl font-bold text-do-blue-light text-center lg:text-left">170K</div>
                         <p class="text-lg text-gray-500 font-medium">Participants in our 2020 hackathon</p>
                     </div>
-                    <div class="w-1/4">
-                        <div class="text-4xl font-bold text-do-blue-light">30K+</div>
+                    <div class="w-full lg:w-1/4">
+                        <div class="text-4xl font-bold text-do-blue-light text-center lg:text-left">30K+</div>
                         <p class="text-lg text-gray-500 font-medium">Questions answered in our community</p>
                     </div>
                 </div>
 
                 <!-- BLOCKS -->
-                <div class="mt-20 flex gap-x-5">
-                    <div class="w-1/4">
+                <div class="mt-20 flex flex-col lg:flex-row gap-x-5 gap-y-5">
+                    <div class="w-full lg:w-1/4">
                         <panel-blog>
                             <template v-slot:image>
                                 <img class="rounded-t-lg" src="/images/how-to-install-mysql-tutorial-image.jpg" alt="">
@@ -603,7 +603,7 @@
                         </panel-blog>
                     </div>
 
-                    <div class="w-1/4">
+                    <div class="w-full lg:w-1/4">
                         <panel-blog>
                             <template v-slot:image>
                                 <img class="rounded-t-lg" src="/images/how-to-deploy-a-react-app-tutorial-image.jpg" alt="">
@@ -623,7 +623,7 @@
                         </panel-blog>
                     </div>
 
-                    <div class="w-1/4">
+                    <div class="w-full lg:w-1/4">
                         <panel-blog>
                             <template v-slot:image>
                                 <img class="rounded-t-lg" src="/images/how-to-install-nodejs-tutorial-image.jpg" alt="">
@@ -643,7 +643,7 @@
                         </panel-blog>
                     </div>
 
-                    <div class="w-1/4">
+                    <div class="w-full lg:w-1/4">
                         <panel-blog>
                             <template v-slot:image>
                                 <img class="rounded-t-lg" src="/images/how-to-scale-your-saas-product-blog-image.jpg" alt="">
@@ -661,8 +661,8 @@
                     </div>
                 </div>
 
-                <div class="mt-10 flex gap-x-5">
-                    <div class="w-1/4">
+                <div class="mt-10 flex flex-col lg:flex-row gap-x-5 gap-y-5">
+                    <div class="w-full lg:w-1/4">
                         <panel-blog>
                             <template v-slot:image>
                                 <img class="rounded-t-lg" src="/images/contributing-to-open-source-blog-image.jpg" alt="">
@@ -679,7 +679,7 @@
                         </panel-blog>
                     </div>
 
-                    <div class="w-1/4">
+                    <div class="w-full lg:w-1/4">
                         <panel-blog>
                             <template v-slot:image>
                                 <img class="rounded-t-lg" src="/images/how-to-code-in-python-tutorial-image.jpg" alt="">
@@ -699,7 +699,7 @@
                         </panel-blog>
                     </div>
 
-                    <div class="w-1/4">
+                    <div class="w-full lg:w-1/4">
                         <panel-blog>
                             <template v-slot:image>
                                 <img class="rounded-t-lg" src="/images/introducing-digitalocean-managed-mongodb-blog-image.jpg" alt="">
@@ -716,7 +716,7 @@
                         </panel-blog>
                     </div>
 
-                    <div class="w-1/4">
+                    <div class="w-full lg:w-1/4">
                         <panel-blog>
                             <template v-slot:image>
                                 <img class="rounded-t-lg" src="/images/multi-cloud-vs-hybrid-cloud-blog-image.jpg" alt="">
@@ -739,14 +739,14 @@
 
         <div class="bg-do-blue-lighter">
             <div
-                class="container flex items-center gap-x-8 mx-auto bg-do-blue-dark text-white py-32 px-16 rounded"
+                class="container flex flex-col lg:flex-row items-center gap-x-8 mx-auto bg-do-blue-dark text-white py-8 lg:py-32 px-8 lg:px-16 lg:rounded"
                 style="background: url(/images/new-cta-band-bg-image.jpg);"
             >
-                <div class="w-1/2">
+                <div class="w-full lg:w-1/2">
                     <h2 class="font-bold text-4xl">Start building today</h2>
                     <p class="text-lg font-medium mt-4">Sign up now and you'll be up and running on DigitalOcean in just minutes.</p>
                 </div>
-                <div class="w-1/2">
+                <div class="w-full lg:w-1/2">
                     <button class="btn-blue">Create your account</button>
                 </div>
             </div>
@@ -754,8 +754,8 @@
 
         <div class="bg-do-blue-lighter">
 
-            <div class="flex mx-32 py-20 border-b border-gray-400">
-                <div class="w-1/5">
+            <div class="flex flex-col lg:flex-row mx-8 gap-y-8 lg:mx-32 py-20 border-b border-gray-400">
+                <div class="w-full lg:w-1/5">
                     <div class="font-medium text-xl mb-5">Company</div>
                     <a href="#" class="text-gray-600 block mb-2 hover:text-gray-900">About</a>
                     <a href="#" class="text-gray-600 block mb-2 hover:text-gray-900">Leadership</a>
@@ -770,7 +770,7 @@
                     <a href="#" class="text-gray-600 block mb-2 hover:text-gray-900">Investor Relations</a>
 
                 </div>
-                <div class="w-1/5">
+                <div class="w-full lg:w-1/5">
                     <div class="font-medium text-xl mb-5">Products</div>
                     <a href="#" class="text-gray-600 block mb-2 hover:text-gray-900">Products Overview</a>
                     <a href="#" class="text-gray-600 block mb-2 hover:text-gray-900">Droplets</a>
@@ -786,7 +786,7 @@
                     <a href="#" class="text-gray-600 block mb-2 hover:text-gray-900">Documentation</a>
                     <a href="#" class="text-gray-600 block mb-2 hover:text-gray-900">Release Notes</a>
                 </div>
-                <div class="w-1/5">
+                <div class="w-full lg:w-1/5">
                     <div class="font-medium text-xl mb-5">Community</div>
                     <a href="#" class="text-gray-600 block mb-2 hover:text-gray-900">Tutorials</a>
                     <a href="#" class="text-gray-600 block mb-2 hover:text-gray-900">Meetups</a>
@@ -801,7 +801,7 @@
                     <a href="#" class="text-gray-600 block mb-2 hover:text-gray-900">Code of Conduct</a>
                     <a href="#" class="text-gray-600 block mb-2 hover:text-gray-900">Newsletter Signup</a>
                 </div>
-                <div class="w-1/5">
+                <div class="w-full lg:w-1/5">
                     <div class="font-medium text-xl mb-5">Solutions</div>
                     <a href="#" class="text-gray-600 block mb-2 hover:text-gray-900">Web & Mobile Apps</a>
                     <a href="#" class="text-gray-600 block mb-2 hover:text-gray-900">Website Hosting</a>
@@ -815,7 +815,7 @@
                     <a href="#" class="text-gray-600 block mb-2 hover:text-gray-900">Big Data</a>
                     <a href="#" class="text-gray-600 block mb-2 hover:text-gray-900">Business Solutions</a>
                 </div>
-                <div class="w-1/5">
+                <div class="w-full lg:w-1/5">
                     <div class="font-medium text-xl mb-5">Contact</div>
                     <a href="#" class="text-gray-600 block mb-2 hover:text-gray-900">Support</a>
                     <a href="#" class="text-gray-600 block mb-2 hover:text-gray-900">Sales</a>
@@ -827,10 +827,10 @@
         </div>
 
         <div class="bg-do-blue-lighter">
-            <div class="mx-32 flex items-center justify-between py-10">
+            <div class="mx-8 lg:mx-32 flex flex-col gap-y-4 lg:flex-row items-center justify-between py-10">
                 <div class="flex gap-x-5 items-center">
-                    <img class="w-10" src="/images/digital-ocean.svg" alt="">
-                    <div class="text-gray-500">© 2021 DigitalOcean, LLC. All rights reserved.</div>
+                    <img class="w-16 lg:w-10" src="/images/digital-ocean.svg" alt="">
+                    <div class="text-gray-500 text-center lg:text-left">© 2021 DigitalOcean, LLC. All rights reserved.</div>
                 </div>
                 <div class="flex gap-x-2">
                     <a href="#" class="hover:opacity-70"><img src="/images/twitch-social-icon.svg" alt=""></a>
