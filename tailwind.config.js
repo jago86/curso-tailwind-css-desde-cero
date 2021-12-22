@@ -5,7 +5,11 @@ module.exports = {
   ],
   theme: {
     container: {
-      padding: '1.4rem',
+      padding: {
+        'DEFAULT': '1.4rem',
+        '2xl': '7rem',
+      }
+      // padding: '1.4rem',
     },
     extend: {
       spacing: {
