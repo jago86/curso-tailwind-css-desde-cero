@@ -21,6 +21,10 @@
         @apply px-5 py-3 rounded-lg bg-white active:bg-gray-200 font-medium border text-do-blue-light focus:outline-dotted focus:outline-1 focus:outline-do-blue-lighter;
     }
 
+    .btn-gray {
+        @apply px-3 py-3 bg-gray-200 hover:bg-gray-300 rounded-lg;
+    }
+
     .panel {
         @apply bg-white rounded-lg shadow-lg px-5 py-5;
     }
