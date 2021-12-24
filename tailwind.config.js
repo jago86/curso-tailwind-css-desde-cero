@@ -12,6 +12,9 @@ module.exports = {
       // padding: '1.4rem',
     },
     extend: {
+      transitionTimingFunction: {
+        'elastic': 'cubic-bezier(.29, 1.01, 1, -0.68)',
+      },
       spacing: {
         'quarter': '25%',
       },
