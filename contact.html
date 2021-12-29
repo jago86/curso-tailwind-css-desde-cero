@@ -10,20 +10,35 @@
 </head>
 <body>
     <div id="app">
-        <panel>
-            <template v-slot:title>Contacto</template>
-            <template v-slot:body>
-                <p class="leading-loose">
-                    Exercitation ullamco qui reprehenderit
-                    dolor. Sint sint irure excepteur nisi
-                    quis exercitation sit. Commodo fugiat
-                    non veniam ullamco elit aute minim.
-                </p>
-                <a class="btn-primary" href="index.html">
-                    Inicio
-                </a>
-            </template>
-        </panel>
+        <div class="w-96 mx-auto mt-40 px-5 py-4 border border-gray-500 bg-gray-100">
+            <h1 class="text-xl font-medium">Contacto</h1>
+            <form action="">
+                <div>
+                    <label class="block" for="">Nombre</label>
+                    <input type="text" class="">
+                </div>
+                <div>
+                    <label class="block" for="">Email</label>
+                    <input type="text" class="">
+                </div>
+                <div>
+                    <label class="block" for="">Departamento</label>
+                    <select name="" id="" class="">
+                        <option value="">Ventas</option>
+                        <option value="">Soporte</option>
+                    </select>
+                </div>
+                <div>
+                    <label class="block" for="">Descripción</label>
+                    <textarea name="" id="" cols="30" rows="10" class=""></textarea>
+                </div>
+                <div>
+                    <label class="block" for=""><input type="checkbox" class=""> Acepto términos y condiciones</label>
+                    <label class="block" for=""><input type="checkbox" class=""> Acepto términos y condiciones</label>
+                    <label class="block" for=""><input type="checkbox" class=""> Acepto términos y condiciones</label>
+                </div>
+            </form>
+        </div>
     </div>
     <script src="js/app.js"></script>
 </body>

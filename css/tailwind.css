@@ -8,6 +8,30 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+    [type='text'],
+    [type='email'],
+    [type='url'],
+    [type='password'],
+    [type='number'],
+    [type='date'],
+    [type='datetime-local'],
+    [type='month'],
+    [type='search'],
+    [type='tel'],
+    [type='time'],
+    [type='week'],
+    [multiple],
+    textarea,
+    select {
+        @apply w-full rounded border-gray-400 focus:border-blue-500 focus:ring-blue-500;
+    }
+
+    [type='checkbox'], [type='radio'] {
+        @apply text-blue-500 focus:ring-blue-600;
+    }
+}
+
 @layer components {
     .btn-blue {
         @apply px-5 py-3 rounded-lg bg-do-blue-light hover:bg-do-blue-medium active:bg-do-blue-mediumdark active:text-sky-400 text-white font-bold focus:outline-dotted focus:outline-1 focus:outline-do-blue-dark;
